@@ -218,6 +218,137 @@
         <a href="./faq.html">Read our FAQs &gt;</a>
         <br>
       </section>
+      
+  <!-- Note :
+   - You can modify the font style and form style to suit your website. 
+   - Code lines with comments Do not remove this code are required for the form to work properly, make sure that you do not remove these lines of code. 
+   - The Mandatory check script can modified as to suit your business needs. 
+   - It is important that you test the modified form before going live.-->
+  <div id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm'>
+  <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads5052680000001479026 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory5052680000001479026()' accept-charset='UTF-8'>
+   <input type='text' style='display:none;' name='xnQsjsdp' value='f966079af9d954046b61b1e1f0c26be29a02f55790459b53b14b8b5920ff9a6d'></input> 
+   <input type='hidden' name='zc_gad' id='zc_gad' value=''></input> 
+   <input type='text' style='display:none;' name='xmIwtLD' value='7969c76120550ce022c1a18bf222c7ba344a815ad5c2d3bf4cfcd57230ab2ae9'></input> 
+   <input type='text'  style='display:none;' name='actionType' value='TGVhZHM='></input>
+   <input type='text' style='display:none;' name='returnURL' value='https&#x3a;&#x2f;&#x2f;www.code-fusion.com' > </input>
+     <!-- Do not remove this code. -->
+  <style>
+  #crmWebToEntityForm, .zcwf_title {
+    background-color: #333;
+    color: ghostwhite;
+    max-width: 360px;
+    text-align: center;
+    border-radius: 9px;
+  }
+  .zcwf_title > input {width: 180px; margin-bottom: 2vh;}
+  .zcwf_title > label {font-size: small;}
+  #formsubmit {
+    background-color: royalblue;
+    color: ghostwhite;
+    margin-top: 2vh;
+    padding: 1vh 0;
+    width: 120px;
+    border: none;
+  }
+  #reset {
+    padding: 1vh 0;
+    width: 120px;
+    border: none;
+  }
+  </style>
+
+  <div class='zcwf_title'>
+    <h4>Send me the course packet</h4><br>
+    <label for='First_Name'>First name *</label><br>
+    <input type='text' id='First_Name' name='First Name' maxlength='40'></input><br>
+    <label for='Last_Name'>Last name *</label><br>
+    <input type='text' id='Last_Name' name='Last Name' maxlength='80'></input><br>
+    <label for='Email'>Email *</label><br>
+    <input type='text' ftype='email' id='Email' name='Email' maxlength='100'></input>
+    <br>
+    <input type='submit' id='formsubmit' value='Submit' title='Submit'>
+    <input type='reset' id="reset" name='reset' value='Reset' title='Reset'>
+  </div>
+
+<script>
+    function validateEmail5052680000001479026() {
+      var form = document.forms['WebToLeads5052680000001479026'];
+      var emailFld = form.querySelectorAll('[ftype=email]');
+      var i;
+      for (i = 0; i < emailFld.length; i++) {
+        var emailVal = emailFld[i].value;
+        if((emailVal.replace(/^\s+|\s+$/g, '')).length!=0 ) {
+          var atpos=emailVal.indexOf('@');
+          var dotpos=emailVal.lastIndexOf('.');
+          if (atpos<1 || dotpos<atpos+2 || dotpos+2>=emailVal.length) {
+            alert('Please enter a valid email address. ');
+            emailFld[i].focus();
+            return false;
+          }
+        }
+      }
+      return true;
+    }
+  
+       function checkMandatory5052680000001479026() {
+      var mndFileds = new Array('First Name','Last Name','Email');
+      var fldLangVal = new Array('First\x20Name','Last\x20Name','Email');
+      for(i=0;i<mndFileds.length;i++) {
+        var fieldObj=document.forms['WebToLeads5052680000001479026'][mndFileds[i]];
+        if(fieldObj) {
+        if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length==0) {
+         if(fieldObj.type =='file') { 
+           alert('Please select a file to upload.'); 
+           fieldObj.focus(); 
+           return false;
+          } 
+        alert(fldLangVal[i] +' cannot be empty.'); 
+                  fieldObj.focus();
+                  return false;
+        }  else if(fieldObj.nodeName=='SELECT') {
+                 if(fieldObj.options[fieldObj.selectedIndex].value=='-None-') {
+          alert(fldLangVal[i] +' cannot be none.'); 
+          fieldObj.focus();
+          return false;
+           }
+        } else if(fieldObj.type =='checkbox'){
+            if(fieldObj.checked == false){
+          alert('Please accept  '+fldLangVal[i]);
+          fieldObj.focus();
+          return false;
+           } 
+         } 
+         try {
+             if(fieldObj.name == 'Last Name') {
+          name = fieldObj.value;
+               }
+        } catch (e) {}
+          }
+      }
+      if(!validateEmail5052680000001479026()) {return false;}
+      document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
+    }
+  
+  function tooltipShow5052680000001479026(el){
+    var tooltip = el.nextElementSibling;
+    var tooltipDisplay = tooltip.style.display;
+    if(tooltipDisplay == 'none'){
+      var allTooltip = document.getElementsByClassName('zcwf_tooltip_over');
+      for(i=0; i<allTooltip.length; i++){
+        allTooltip[i].style.display='none';
+      }
+      tooltip.style.display = 'block';
+    }else{
+      tooltip.style.display='none';
+    }
+  }
+  </script>
+    <!-- Do not remove this --- Analytics Tracking code starts -->
+    <script id='wf_anal' src='https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=7969c76120550ce022c1a18bf222c7ba344a815ad5c2d3bf4cfcd57230ab2ae9gidf966079af9d954046b61b1e1f0c26be29a02f55790459b53b14b8b5920ff9a6dgid885e3c1045bd9bdcc91bdf30f82b5696gid14f4ec16431e0686150daa43f3210513&tw=61690b96c1d0471b638f31426f38e68aa67fb7ed6da86f32dc10ad817fe55a0a'></script>
+    <!-- Do not remove this --- Analytics Tracking code ends. -->
+  </form>
+  </div>
+
     </main>
 
     <script src="footer.js"></script>
