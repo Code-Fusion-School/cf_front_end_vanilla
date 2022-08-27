@@ -343,7 +343,120 @@
     <div class="modal" id="applymodal">
       <div class="modalcont">
         <span class="modalclose" onclick="(()=>applymodal.style.display='none')()">&times;</span>
-        <script src='https://crm.zoho.com/crm/WebFormServeServlet?rid=7969c76120550ce022c1a18bf222c7baf5681e49b34463b6a8f97b2778e2415dgidf966079af9d954046b61b1e1f0c26be29a02f55790459b53b14b8b5920ff9a6d&script=$sYG'></script>
+        <!-- <script src='https://crm.zoho.com/crm/WebFormServeServlet?rid=7969c76120550ce022c1a18bf222c7baf5681e49b34463b6a8f97b2778e2415dgidf966079af9d954046b61b1e1f0c26be29a02f55790459b53b14b8b5920ff9a6d&script=$sYG'></script> -->
+  
+        <div id='crmWebToEntityForm'>
+        <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads5052680000001496005 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory5052680000001496005()' accept-charset='UTF-8'>
+          <input type='text' style='display:none;' name='xnQsjsdp' value='f966079af9d954046b61b1e1f0c26be29a02f55790459b53b14b8b5920ff9a6d'></input> 
+          <input type='hidden' name='zc_gad' id='zc_gad' value=''></input> 
+          <input type='text' style='display:none;' name='xmIwtLD' value='7969c76120550ce022c1a18bf222c7baf5681e49b34463b6a8f97b2778e2415d'></input> 
+          <input type='text'  style='display:none;' name='actionType' value='TGVhZHM='></input>
+          <input type='text' style='display:none;' name='returnURL' value='https&#x3a;&#x2f;&#x2f;www.code-fusion.com' > </input>
+          <!-- Do not remove this code. -->
+          <input type='text' style='display:none;' id='ldeskuid' name='ldeskuid'></input>
+          <input type='text' style='display:none;' id='LDTuvid' name='LDTuvid'></input>
+       
+          <div class='zcwf_title'>
+            <h4>Get your application started</h4>
+            <label for='First_Name'>First name *</label>
+            <input type='text' id='First_Name' name='First Name' maxlength='40'></input><br>
+            <label for='Last_Name'>Last name *</label>
+            <input type='text' id='Last_Name' name='Last Name' maxlength='80'></input><br>
+            <label for='Phone'>Phone *</label>
+            <input type='text' id='Phone' name='Phone' maxlength='15'></input><br>
+            <label for='Email'>Email *</label>
+            <input type='text' ftype='email' id='Email' name='Email' maxlength='50'></input><br>
+            <label for='Street'>Street</label>
+            <input type='text' id='Street' name='Street' maxlength='50'></input><br>
+            <label for='City'>City</label>
+            <input type='text' id='City' name='City' maxlength='20'></input><br>
+            <label for='State'>State</label>
+            <input type='text' id='State' name='State' maxlength='30'></input><br>
+            <label for='Zip_Code'>Zip Code</label>
+            <input type='text' id='Zip_Code' name='Zip Code' maxlength='10'></input><br>
+            <input type='submit' class='formsubmit' value='Submit' title='Submit'>
+            <input type='reset' class='reset' name='reset' value='Reset' title='Reset'>            
+          </div>
+	<script>
+	function validateEmail5052680000001496005() {
+		var form = document.forms['WebToLeads5052680000001496005'];
+		var emailFld = form.querySelectorAll('[ftype=email]');
+		var i;
+		for (i = 0; i < emailFld.length; i++) {
+			var emailVal = emailFld[i].value;
+			if((emailVal.replace(/^\s+|\s+$/g, '')).length!=0 ) {
+				var atpos=emailVal.indexOf('@');
+				var dotpos=emailVal.lastIndexOf('.');
+				if (atpos<1 || dotpos<atpos+2 || dotpos+2>=emailVal.length) {
+					alert('Please enter a valid email address. ');
+					emailFld[i].focus();
+					return false;
+				}
+			}
+		}
+		return true;
+	}
+
+ 	  function checkMandatory5052680000001496005() {
+		var mndFileds = new Array('First Name','Last Name','Email','Phone');
+		var fldLangVal = new Array('First\x20Name','Last\x20Name','Email','Phone');
+		for(i=0;i<mndFileds.length;i++) {
+		  var fieldObj=document.forms['WebToLeads5052680000001496005'][mndFileds[i]];
+		  if(fieldObj) {
+			if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length==0) {
+			 if(fieldObj.type =='file') { 
+        alert('Please select a file to upload.'); 
+        fieldObj.focus(); 
+        return false;
+			} 
+			alert(fldLangVal[i] +' cannot be empty.'); 
+   	   	  	  fieldObj.focus();
+   	   	  	  return false;
+			} else if(fieldObj.nodeName=='SELECT') {
+  	   	   	 if(fieldObj.options[fieldObj.selectedIndex].value=='-None-') {
+				alert(fldLangVal[i] +' cannot be none.'); 
+				fieldObj.focus();
+				return false;
+			   }
+			} else if(fieldObj.type =='checkbox'){
+ 	 	 	 if(fieldObj.checked == false){
+				alert('Please accept  '+fldLangVal[i]);
+				fieldObj.focus();
+				return false;
+			   } 
+			 } 
+			 try {
+			     if(fieldObj.name == 'Last Name') {
+				name = fieldObj.value;
+ 	 	 	    }
+			} catch (e) {}
+		    }
+		}
+		trackVisitor5052680000001496005();
+		if(!validateEmail5052680000001496005()){return false;}
+		document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
+	}
+
+function tooltipShow5052680000001496005(el){
+	var tooltip = el.nextElementSibling;
+	var tooltipDisplay = tooltip.style.display;
+	if(tooltipDisplay == 'none'){
+		var allTooltip = document.getElementsByClassName('zcwf_tooltip_over');
+		for(i=0; i<allTooltip.length; i++){
+			allTooltip[i].style.display='none';
+		}
+		tooltip.style.display = 'block';
+	} else {
+		tooltip.style.display='none';
+	}
+}
+</script>
+<script type='text/javascript' id='VisitorTracking'>var $zoho= $zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode:'8ef416e491ebf3dbd6c1c4f1ad793516af593db3d2cdc68a1704c1bb86c08b6d1a2010ab7b6727677d37b27582c0e9c4', values:{},ready:function(){}};var d=document;s=d.createElement('script');s.type='text/javascript';s.id='zsiqscript';s.defer=true;s.src='https://salesiq.zoho.com/widget';t=d.getElementsByTagName('script')[0];t.parentNode.insertBefore(s,t);function trackVisitor5052680000001496005(){try{if($zoho){var LDTuvidObj = document.forms['WebToLeads5052680000001496005']['LDTuvid'];if(LDTuvidObj){LDTuvidObj.value = $zoho.salesiq.visitor.uniqueid();}var firstnameObj = document.forms['WebToLeads5052680000001496005']['First Name'];if(firstnameObj){name = firstnameObj.value +' '+name;}$zoho.salesiq.visitor.name(name);var emailObj = document.forms['WebToLeads5052680000001496005']['Email'];if(emailObj){email = emailObj.value;$zoho.salesiq.visitor.email(email);}}} catch(e){}}</script>
+<!-- Do not remove this --- Analytics Tracking code -->
+  <script id='wf_anal' src='https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=7969c76120550ce022c1a18bf222c7baf5681e49b34463b6a8f97b2778e2415dgidf966079af9d954046b61b1e1f0c26be29a02f55790459b53b14b8b5920ff9a6dgid885e3c1045bd9bdcc91bdf30f82b5696gid14f4ec16431e0686150daa43f3210513&tw=61690b96c1d0471b638f31426f38e68aa67fb7ed6da86f32dc10ad817fe55a0a'></script>
+</form>
+</div>
+
       </div>
     </div>
     <script>
@@ -353,13 +466,10 @@
     <div class="modal" id="packetmodal">
       <div class="modalcont">
         <span class="modalclose" onclick="(()=>packetmodal.style.display='none')()">&times;</span>
-        <!-- <script src='https://crm.zoho.com/crm/WebFormServeServlet?rid=7969c76120550ce022c1a18bf222c7ba344a815ad5c2d3bf4cfcd57230ab2ae9gidf966079af9d954046b61b1e1f0c26be29a02f55790459b53b14b8b5920ff9a6d&script=$sYG'></script> -->
-  <!-- Note :
-   - You can modify the font style and form style to suit your website. 
+  <!-- Note :0476
    - Code lines with comments Do not remove this code are required for the form to work properly, make sure that you do not remove these lines of code. 
-   - The Mandatory check script can modified as to suit your business needs. 
-   - It is important that you test the modified form before going live.-->
-   <div id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm'>
+   - The Mandatory check script can modified as to suit your business needs.-->
+  <div id='crmWebToEntityForm'>
     <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads5052680000001479026 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory5052680000001479026()' accept-charset='UTF-8'>
      <input type='text' style='display:none;' name='xnQsjsdp' value='f966079af9d954046b61b1e1f0c26be29a02f55790459b53b14b8b5920ff9a6d'></input> 
      <input type='hidden' name='zc_gad' id='zc_gad' value=''></input> 
@@ -367,32 +477,6 @@
      <input type='text'  style='display:none;' name='actionType' value='TGVhZHM='></input>
      <input type='text' style='display:none;' name='returnURL' value='https&#x3a;&#x2f;&#x2f;www.code-fusion.com' > </input>
        <!-- Do not remove this code. -->
-    <style>
-    #crmWebToEntityForm {
-      background-color: #333;
-      color: ghostwhite;
-      max-width: 360px;
-      margin: 0 auto;
-      padding: 4vh 0 2vh;
-      text-align: center;
-      border-radius: 9px;
-    }
-    .zcwf_title > input {width: 180px; margin-bottom: 2vh;}
-    .zcwf_title > label {font-size: small;}
-    #formsubmit {
-      background-color: royalblue;
-      color: ghostwhite;
-      margin-top: 2vh;
-      padding: 1vh 0;
-      width: 110px;
-      border: none;
-    }
-    #reset {
-      padding: 1vh 0;
-      width: 110px;
-      border: none;
-    }
-    </style>
   
     <div class='zcwf_title'>
       <h4>Send me the course packet</h4><br>
@@ -403,8 +487,8 @@
       <label for='Email'>Email *</label><br>
       <input type='text' ftype='email' id='Email' name='Email' maxlength='100'></input>
       <br>
-      <input type='submit' id='formsubmit' value='Submit' title='Submit'>
-      <input type='reset' id="reset" name='reset' value='Reset' title='Reset'>
+      <input type='submit' class='formsubmit' value='Submit' title='Submit'>
+      <input type='reset' class="reset" name='reset' value='Reset' title='Reset'>
     </div>
   
     <script>
@@ -463,7 +547,7 @@
             }
         }
         if(!validateEmail5052680000001479026()) {return false;}
-        document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
+        document.querySelector('.formsubmit').setAttribute('disabled', true);
       }
     
       function tooltipShow5052680000001479026(el){

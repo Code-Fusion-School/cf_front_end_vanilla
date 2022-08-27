@@ -199,7 +199,7 @@ button:hover {
 }
 .modalcont {
   text-align: right;
-  margin: 10vh auto;
+  margin: 7vh auto;
   width: min(80%, 400px);
 }
 .modalclose {
@@ -227,3 +227,28 @@ p {font-size: min(4vw, 18px); font-weight: 300;}
 a {font-size: min(3.5vw, 18px);}
 svg, img {height: 30px;}
 #finance img {height: 70px;}
+
+#crmWebToEntityForm {
+  background-color: royalblue;
+  color: ghostwhite;
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 4vh 0 2vh;
+  text-align: center;
+  border-radius: 9px;
+}
+.zcwf_title > input {width: 150px; margin-bottom: 2vh; text-align: center;}
+.zcwf_title > label {font-size: small;}
+.formsubmit {
+  background-color: #333;
+  color: ghostwhite;
+  margin-top: 2vh;
+  padding: 1vh 0;
+  width: 110px;
+  border: none;
+}
+.reset {
+  padding: 1vh 0;
+  width: 110px;
+  border: none;
+}
