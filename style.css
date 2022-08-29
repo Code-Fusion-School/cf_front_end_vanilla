@@ -218,8 +218,8 @@ label {font-size: small;}
 input {
   border-radius: 9px;
   border: none;
-  padding: 0.4em 10px;
-  width: 240px;
+  padding: 0.4em 5px;
+  width: 220px;
   margin-bottom: 2vh;
   text-align: center;
 }
