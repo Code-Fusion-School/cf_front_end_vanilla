@@ -183,9 +183,7 @@ button {
   color: ghostwhite;
   padding: 0.5em 1.5em;
 }
-button:hover {
-  background-color: green;
-}
+button:hover {background-color: green;}
 
 .modal {
   display: none;
@@ -199,7 +197,7 @@ button:hover {
 }
 .modalcont {
   text-align: right;
-  margin: 10vh auto;
+  margin: 7vh auto;
   width: min(80%, 400px);
 }
 .modalclose {
@@ -207,12 +205,35 @@ button:hover {
   color: ghostwhite;
   cursor: pointer;
 }
-
+#crmWebToEntityForm {
+  background-color: royalblue;
+  color: ghostwhite;
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 4vh 0 2vh;
+  text-align: center;
+  border-radius: 9px;
+}
+label {font-size: small;}
 input {
   border-radius: 9px;
-  border: 1px solid royalblue;
-  padding: 0.4em 1em;
-  max-width: 200px;
+  border: none;
+  padding: 0.4em 10px;
+  width: 240px;
+  margin-bottom: 2vh;
+  text-align: center;
+}
+.formsubmit {
+  background-color: #333;
+  color: ghostwhite;
+  cursor: pointer;
+  margin-top: 2vh;
+  padding: 1vh 0;
+  width: 110px;
+}
+.reset {
+  cursor: pointer;
+  width: 110px;
 }
 
 ul {margin: 0 5vw; text-align: left;}
