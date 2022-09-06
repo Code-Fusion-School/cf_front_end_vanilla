@@ -3,9 +3,10 @@ document.write(`
     <nav>
       <div><a href="./index.html"><img src="img/cflogo.png" alt="logo" /></a></div>
       <a href="./about.html">About</a>
+      <a href="./courses.html">Courses</a>
       <a href="./faq.html">FAQ</a>
       <a href="./legal.html">Legal</a>
-      <a href="./courses.html">Courses</a>
+      <a href="./fiance.html">Fiance</a>
     </nav>
     <div>
       <br>
