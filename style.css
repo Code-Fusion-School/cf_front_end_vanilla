@@ -88,7 +88,7 @@ article > div > p {margin-bottom: 1vh; font-weight: 400;}
   color: ghostwhite;
   padding: 0;
 }
-.hero > div {padding: 15vh 0 19vh;}
+.hero > div {padding: 16vh 0 20vh;}
 .hero > div > img {height: auto; width: min(320px, 70vw);}
 
 .sharp {
@@ -106,7 +106,7 @@ article > div > p {margin-bottom: 1vh; font-weight: 400;}
 .shdiv {
   max-width: min(600px, 70vw);
   padding: 1vh 0 0 6vw;
-  min-height: 60vh;
+  min-height: 70vh;
   text-align: left;
   color: ghostwhite;
 }
