@@ -94,12 +94,14 @@ article > div > p {margin-bottom: 1vh; font-weight: 400;}
 .sharp {
   background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('img/group.jpg');  
   background-size: cover;
-  background-position: bottom;  
+  /* background-position: bottom; */
+  background-attachment: fixed;
 }
 .sharp2 {
   background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('img/pairpgmg.jpg');
   background-size: cover;
-  background-position: top;
+  /* background-position: top; */
+  background-attachment: fixed;
 }
 .shdiv {
   max-width: min(600px, 70vw);
