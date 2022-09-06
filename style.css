@@ -88,23 +88,25 @@ article > div > p {margin-bottom: 1vh; font-weight: 400;}
   color: ghostwhite;
   padding: 0;
 }
-.hero > div {padding: 15vh 0 19vh;}
+.hero > div {padding: 16vh 0 20vh;}
 .hero > div > img {height: auto; width: min(320px, 70vw);}
 
 .sharp {
   background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('img/group.jpg');  
   background-size: cover;
-  background-position: bottom;  
+  /* background-position: bottom; */
+  background-attachment: fixed;
 }
 .sharp2 {
   background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('img/pairpgmg.jpg');
   background-size: cover;
-  background-position: top;
+  /* background-position: top; */
+  background-attachment: fixed;
 }
 .shdiv {
   max-width: min(600px, 70vw);
   padding: 1vh 0 0 6vw;
-  min-height: 60vh;
+  min-height: 70vh;
   text-align: left;
   color: ghostwhite;
 }
