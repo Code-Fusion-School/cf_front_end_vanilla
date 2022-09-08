@@ -6,7 +6,7 @@ document.write(`
       <a href="./courses.html">Courses</a>
       <a href="./faq.html">FAQ</a>
       <a href="./legal.html">Legal</a>
-      <a href="./fiance.html">Fiance</a>
+      <a href="./finance.html">Finance</a>
     </nav>
     <div>
       <br>
