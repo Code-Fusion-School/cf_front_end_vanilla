@@ -42,7 +42,7 @@ article > div {
   border-radius: 9px;
   margin: 1vh;
   width: 320px;
-  padding: 3vh;
+  padding: 6vh 3vh;
 }
 article > div > p {margin-bottom: 1vh; font-weight: 400;}
 
