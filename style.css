@@ -100,7 +100,7 @@ article > div > p {margin-bottom: 1vh; font-weight: 400;}
 .sharp2 {
   background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('img/pairpgmg.jpg');
   background-size: cover;
-  /* background-position: top; */
+  background-position: top;
   background-attachment: fixed;
 }
 .shdiv {
