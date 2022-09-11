@@ -10,8 +10,8 @@ document.write(`
     </nav>
     <div>
       <br>
-      <a href="https://www.instagram.com/CodeFusionLLC"><img src="./img/icons/igramblue.svg" alt="instagram"></a>
-      <a href="https://www.facebook.com/codefusionsocial"><img src="./img/icons/fbblue.svg" alt="facebook"></a>
+      <a href="https://www.instagram.com/code_fusion_bootcamp"><img src="./img/icons/igramblue.svg" alt="instagram"></a>
+      <a href="https://www.facebook.com/codefusionbootcamp"><img src="./img/icons/fbblue.svg" alt="facebook"></a>
       <a href="https://www.linkedin.com/company/code-fusion"><img src="./img/icons/linkedinblue.svg" alt="linkedin"></a>
       <!-- <a href="https://www.youtube.com/watch?v=9WdQvAxcxzA"><img src="./img/icons/ytubeblue.svg" alt="youtube"></a> -->
       <a href="https://twitter.com/CodeFusionLLC"><img src="./img/icons/twitterblue.svg" alt="twitter"></a>
