@@ -4,4 +4,4 @@ https://www.code-fusion.com/faq.html
 https://www.code-fusion.com/about.html
 https://www.code-fusion.com/finance.html
 https://www.code-fusion.com/legal.html
-https://www.code-fusion.com/index.html
+https://www.code-fusion.com/benchmark.html
