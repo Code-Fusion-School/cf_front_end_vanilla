@@ -99,20 +99,19 @@ article > div > p {margin-bottom: 1vh; font-weight: 400;}
 }
 
 .hero {
-  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('img/colab2.jpg');
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('img/colab2logo1500x1000.png');
   background-size: cover;
   color: ghostwhite;
   padding: 0;
   background-position: 50% 0%;
   background-attachment: fixed;
 }
-.hero > div {padding: 16vh 0 20vh;}
+.hero > div {padding: 35vh 0 30vh;}
 .hero > div > img {height: auto; width: min(320px, 70vw);}
 
 .sharp {
   background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('img/group.jpg');
   background-size: cover;
-  /* background-position: bottom; */
   background-attachment: fixed;
 }
 .sharp2 {
