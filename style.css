@@ -106,8 +106,10 @@ article > div > p {margin-bottom: 1vh; font-weight: 400;}
   background-position: 50% 0%;
   background-attachment: fixed;
 }
-.hero > div {padding: 35vh 0 30vh;}
+.hero > div {padding: 35vh 0 25vh;}
 .hero > div > img {height: auto; width: min(320px, 70vw);}
+.hero > div a {color: gold;}
+.hero > div a:hover {color: ghostwhite;}
 
 .sharp {
   background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('img/group.jpg');
@@ -204,6 +206,7 @@ button {
   border-radius: 9px;
   border: none;
   color: ghostwhite;
+  font-weight: bold;
   padding: 0.5em 1.5em;
 }
 button:hover {background-color: green;}
