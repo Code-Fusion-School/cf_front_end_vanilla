@@ -107,9 +107,9 @@ article > div > p {margin-bottom: 1vh; font-weight: 400;}
   background-attachment: fixed;
 }
 .hero > div {padding: 35vh 0 25vh;}
-.hero > div > img {height: auto; width: min(320px, 70vw);}
 .hero > div a {color: gold;}
 .hero > div a:hover {color: ghostwhite;}
+.hero button {display: inline-block; margin-bottom: 0.5em;}
 
 .sharp {
   background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('img/group.jpg');
