@@ -5,12 +5,13 @@
 body {
   background-color: ghostwhite;
   color: rgb(40, 40, 40);
-  font-family: 'Roboto';
+  font-family: 'Roboto', serif;
   text-align: center;
   line-height: 1.25;
 }
 /* section = parent to aside, article, or div */
 section {padding: 9vh 0;}
+
 /* aside = grid parent container */
 aside {
   padding: 1vh 1vh;
@@ -18,6 +19,7 @@ aside {
   gap: 1vh;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
+
 /* article = flex parent container */
 article {
   display: flex;
@@ -26,6 +28,7 @@ article {
   max-width: 960px;
   margin: 3vh auto 5vh;
 }
+
 /* standard grid child */
 aside > div {
   background-color: rgb(40, 40, 40);
@@ -34,7 +37,11 @@ aside > div {
   text-align: left;
   padding: 3vh 3vh;
 }
-aside > div > h1 {margin-top: 1vh;}
+
+aside > div > h1 {
+  margin-top: 1vh;
+}
+
 /* standard flex child */
 article > div {
   box-shadow: 5px 5px 5px gray;
@@ -44,11 +51,23 @@ article > div {
   width: 320px;
   padding: 6vh 3vh;
 }
-article > div > p {margin-bottom: 1vh; font-weight: 400;}
+article > div > p {
+  margin-bottom: 1vh;
+  font-weight: 400;
+}
 
-.bluesection {background-color: royalblue; color: ghostwhite;}
-.bluesection > a {color: ghostwhite;}
-.bluesection > aside > div {text-align: center;}
+.bluesection {
+  background-color: royalblue;
+  color: ghostwhite;
+}
+
+.bluesection > a {
+  color: ghostwhite;
+}
+
+.bluesection > aside > div {
+  text-align: center;
+}
 
 .apply {
   background-color: white;
@@ -64,18 +83,42 @@ article > div > p {margin-bottom: 1vh; font-weight: 400;}
   align-self: center;
   text-align: left;
 }
-.apply > div > h3 {display: inline;}
-.apply svg {color: royalblue;}
+
+.apply > div > h3 {
+  display: inline;
+}
+
+.apply svg {
+  color: royalblue;
+}
 
 #coding {
   background-color: royalblue;
   color: white;
 }
-#coding h2 {color: royalblue; background-color: ghostwhite; padding: 0.2em; border-radius: 9px; margin: 0 40px 20px;}
-#coding a {color: ghostwhite;}
-#coding a:hover {color: gold;}
 
-#testin h2 {color: rgb(40, 40, 40); background-color: ghostwhite; padding: 0.2em; border-radius: 9px; margin: 0 40px 20px;}
+#coding h2 {
+  color: royalblue;
+  background-color: ghostwhite;
+  padding: 0.2em;
+  border-radius: 9px;
+  margin: 0 40px 20px;}
+
+#coding a {
+  color: ghostwhite;
+}
+
+#coding a:hover {
+  color: gold;
+}
+
+#testin h2 {
+  color: rgb(40, 40, 40);
+  background-color: ghostwhite;
+  padding: 0.2em;
+  border-radius: 9px;
+  margin: 0 40px 20px;}
+
 .coursedark {
   color: rgb(40, 40, 40);
   background-color: ghostwhite;
@@ -99,28 +142,36 @@ article > div > p {margin-bottom: 1vh; font-weight: 400;}
 }
 
 .hero {
-  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('img/colab2logo1500x1000.png');
   background-size: cover;
   color: ghostwhite;
   padding: 0;
-  background-position: 50% 0%;
-  background-attachment: fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/colab2logo1500x1000.png') fixed 50% 0;
 }
-.hero > div {padding: 35vh 0 25vh;}
-.hero > div a {color: gold;}
-.hero > div a:hover {color: ghostwhite;}
-.hero button {display: inline-block; margin-bottom: 0.5em;}
+
+.hero > div {
+  padding: 35vh 0 25vh;
+}
+
+.hero > div a {
+  color: gold;
+}
+
+.hero > div a:hover {
+  color: ghostwhite;
+}
+
+.hero button {
+  display: inline-block;
+  margin-bottom: 0.5em;
+}
 
 .sharp {
-  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('img/group.jpg');
   background-size: cover;
-  background-attachment: fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/group.jpg') fixed;
 }
 .sharp2 {
-  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('img/pairpgmg.jpg');
   background-size: cover;
-  background-position: top;
-  background-attachment: fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/pairpgmg.jpg') fixed top;
 }
 .shdiv {
   max-width: min(600px, 70vw);
@@ -135,6 +186,7 @@ article > div > p {margin-bottom: 1vh; font-weight: 400;}
   max-width: 840px;
   margin: 0 auto;
 }
+
 .widediv > div {
   box-shadow: 5px 5px 5px gray;
   background-color: white;
@@ -153,15 +205,40 @@ table {
   padding: 4vw 2vw;
   margin: 0 auto;}
 th {font-weight: bold;}
-tbody td {padding: 1vh 1vw;}
-#cfrow {color: gold;}
 
-#courses > h1 {margin-bottom: 5vh;}
-details {margin: 2vh 0;}
-details summary {cursor: pointer; color:royalblue;}
-details summary:hover {color: green;}
-details div {text-align: left; padding: 0vh 0vw 2vh;}
-details div h3 {margin-top: 2vh;}
+tbody td {
+  padding: 1vh 1vw;
+}
+
+#cfrow {
+  color: gold;
+}
+
+#courses > h1 {
+  margin-bottom: 5vh;
+}
+
+details {
+  margin: 2vh 0;
+}
+
+details summary {
+  cursor: pointer;
+  color:royalblue;
+}
+
+details summary:hover {
+  color: green;
+}
+
+details div {
+  text-align: left;
+  padding: 0 0 2vh;
+}
+
+details div h3 {
+  margin-top: 2vh;
+}
 
 #coursemap {
   width: min(450px, 85vw);
@@ -174,14 +251,18 @@ details div h3 {margin-top: 2vh;}
 
 nav {
   background-color: rgb(40, 40, 40);
-  /* position: sticky; top: 0; */
+  position: sticky; top: 0;
   text-align: right;
   padding: 0.5vh 1vh;
+  display: inline-block;
+  width: 99%;
 }
+
 nav > div {
   float: left;
   padding-top: 0.5vh;
 }
+
 nav a {
   padding-right: 1vw;
   line-height: 1;
@@ -199,7 +280,10 @@ a {
   text-decoration: none;
   color: royalblue;
 }
-a:hover {color: gold;}
+
+a:hover {
+  color: gold;
+}
 
 button {
   background-color:royalblue;
@@ -209,7 +293,10 @@ button {
   font-weight: bold;
   padding: 0.5em 1.5em;
 }
-button:hover {background-color: green;}
+
+button:hover {
+  background-color: green;
+}
 
 .modal {
   display: none;
@@ -221,16 +308,19 @@ button:hover {background-color: green;}
   top: 0;
   background-color: rgba(0, 40, 40, 0.5);
 }
+
 .modalcont {
   text-align: right;
   margin: 7vh auto;
   width: min(80%, 400px);
 }
+
 .modalclose {
   font-size:x-large;
   color: ghostwhite;
   cursor: pointer;
 }
+
 #crmWebToEntityForm {
   background-color: royalblue;
   color: ghostwhite;
@@ -240,7 +330,11 @@ button:hover {background-color: green;}
   text-align: center;
   border-radius: 9px;
 }
-label {font-size: small;}
+
+label {
+  font-size: small;
+}
+
 input {
   border-radius: 9px;
   border: none;
@@ -249,6 +343,7 @@ input {
   margin-bottom: 2vh;
   text-align: center;
 }
+
 .formsubmit {
   background-color: #333;
   color: ghostwhite;
@@ -257,21 +352,69 @@ input {
   padding: 1vh 0;
   width: 110px;
 }
+
 .reset {
   cursor: pointer;
   width: 110px;
 }
 
-ul {margin: 0 5vw; text-align: left;}
+ul {
+  margin: 0 5vw;
+  text-align: left;
+}
 
-h1 {font-size: min(8vw, 40px); padding-bottom: 0.5em; font-weight: bold;}
-h2 {font-size: min(6vw, 30px); padding-bottom: 0.25em;}
-h3 {font-size: min(5vw, 22px); padding-bottom: 0.25em; font-weight: bold;}
-h4 {font-size: min(5vw, 22px); padding-bottom: 0.25em; line-height: 1.5;}
-h5 {font-size: min(4.5vw, 20px); padding-bottom: 0.25em; line-height: 1.5;}
-h6 {font-size: min(4.5vw, 20px); text-decoration:line-through; line-height: 1.5;}
-p {font-size: min(4vw, 18px); font-weight: 300;}
-a {font-size: min(3.5vw, 18px);}
-svg, img {height: 30px;}
-.swe img {margin: 4px;}
-#finance img {height: 70px;}
+h1 {
+  font-size: min(8vw, 40px);
+  padding-bottom: 0.5em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: min(6vw, 30px);
+  padding-bottom: 0.25em;
+}
+
+h3 {
+  font-size: min(5vw, 22px);
+  padding-bottom: 0.25em;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: min(5vw, 22px);
+  padding-bottom: 0.25em;
+  line-height: 1.5;
+}
+
+h5 {
+  font-size: min(4.5vw, 20px);
+  padding-bottom: 0.25em;
+  line-height: 1.5;
+}
+
+h6 {
+  font-size: min(4.5vw, 20px);
+  text-decoration:line-through;
+  line-height: 1.5;
+}
+
+p {
+  font-size: min(4vw, 18px);
+  font-weight: 300;
+}
+
+a {
+  font-size: min(3.5vw, 18px);
+}
+
+svg, img {
+  height: 30px;
+}
+
+.swe img {
+  margin: 4px;
+}
+
+#finance img {
+  height: 70px;
+}
