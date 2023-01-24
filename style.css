@@ -291,10 +291,20 @@ button {
   border: none;
   color: ghostwhite;
   font-weight: bold;
-  padding: 0.5em 1.5em;
+  padding: .5em 1.5em;
 }
 
-button:hover {
+#sign_up {
+  background-color:royalblue;
+  border-radius: .75em;
+  border: none;
+  color: ghostwhite;
+  font-weight: bold;
+  padding: 1.5em 1.5em;
+}
+
+
+button:hover, #sign_up:hover {
   background-color: green;
 }
 
