@@ -287,7 +287,7 @@ a:hover {
 
 button {
   background-color:royalblue;
-  border-radius: 9px;
+  border-radius: .75em;
   border: none;
   color: ghostwhite;
   font-weight: bold;
